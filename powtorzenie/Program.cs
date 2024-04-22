@@ -46,7 +46,30 @@ namespace Powtorzeniowy
                 }
             }
         }
-    
+    public void Przeszukaj(int[] tab)
+        {
+            bool liczba = false;
+            int x = 0;
+            Console.Write("Jakiej liczby szukasz w tablicy? : ");
+            int szukana = int.Parse(Console.ReadLine());
+            for(int i = 0; i < tab.Length;i++)
+            {
+                if (tab[i] == szukana)
+                {
+                    liczba == true;
+                    x++;
+                }
+            }
+            if (liczba == true)
+            {
+                Console.WriteLine("Liczba znajduje się w tablicy, występuje " + x + "razy");
+            }
+            else
+            {
+                Console.WriteLine("Liczba nie znajduje się w tablicy");
+            }
+        
+        }
     
    
     
